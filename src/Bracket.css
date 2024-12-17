@@ -1,0 +1,62 @@
+.bracket-container {
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+  }
+  
+.bracket-image {
+    position: relative;
+}
+  
+.bracket-image img {
+    width: 100%;
+    display: block;
+}
+
+.bracket-team {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bracket-signature {
+    width: 300px;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.bracket-signature-input {
+    outline: none;
+    font-size: 24px;
+}
+
+.bracket-signature-text {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+.bracket-seed {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.bracket-team.selection {
+    border-color: black;
+}
+
+.advance-button {
+    margin-top: 20px;;
+    width: 200px;
+    height: 100px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
