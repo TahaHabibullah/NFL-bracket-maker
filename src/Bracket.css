@@ -23,6 +23,13 @@
     cursor: pointer;
 }
 
+.bracket-outside {
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .bracket-signature {
     width: 300px;
     position: absolute;
@@ -44,6 +51,10 @@
     .advance-button {
         display: none;
     }
+
+    .print-button {
+        display: none;
+    }
 }
 
 .bracket-signature-text {
@@ -63,7 +74,17 @@
 }
 
 .advance-button {
-    margin-top: 20px;;
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.print-button {
+    justify-self: center;
+    margin-top: 20px;
     width: 200px;
     height: 100px;
     color: black;

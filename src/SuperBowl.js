@@ -18,9 +18,14 @@ const SuperBowl = ({ matchup }) => {
         setAdvanced(true);
     }
 
+    const handlePrint = () => {
+        window.print();
+    };
+
     const handleChange = (e) => {
         setText(e.target.value.toUpperCase());
     };
+
 
     return (
         <div>
@@ -33,17 +38,22 @@ const SuperBowl = ({ matchup }) => {
             />
             {advanced ? (
                 <div>
-                    <input
-                        className="bracket-signature-input"
-                        type="text"
-                        value={text}
-                        onChange={handleChange}
-                        placeholder="Type name here..."
-                    />
                     <div className="bracket-signature" style={{ top: "195px", left: "593px" }}>
                         <div className="bracket-signature-text">
                             {text}'S BRACKET
                         </div>
+                    </div>
+                    <div className="bracket-outside">
+                        <input
+                            className="bracket-signature-input"
+                            type="text"
+                            value={text}
+                            onChange={handleChange}
+                            placeholder="Type name here..."
+                        />
+                        <button className="print-button" onClick={handlePrint} disabled={winner === null}>
+                            PRINT
+                        </button>
                     </div>
                 </div>
             ) : (
