@@ -2,7 +2,7 @@
     position: relative;
     width: 1500px;
     margin: 0 auto;
-  }
+}
   
 .bracket-image {
     position: relative;
@@ -34,6 +34,16 @@
 .bracket-signature-input {
     outline: none;
     font-size: 24px;
+}
+
+@media print {
+    .bracket-signature-input {
+        display: none;
+    }
+
+    .advance-button {
+        display: none;
+    }
 }
 
 .bracket-signature-text {
